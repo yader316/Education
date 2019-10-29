@@ -44,9 +44,8 @@
 /* container header */
 .main-wrapper-header{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background: url(..//img/Trazado-1.png)no-repeat;
-    background-size: 100%;
     position: relative;
 }     
 .header-container{
@@ -89,12 +88,11 @@
 }
 .learning-container{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background:var(--background-rbga-black);
     background-size: 100%;
-    position: relative;
-    top: 0;
-    display: flex;
+    /* position: relative;
+    top: 0; */
     justify-content: center;
     align-items: center; 
 }
@@ -372,6 +370,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 13rem;
+    transition: all .5s ease;
 }
 .client-container__paragraph{
     width: 50%;
@@ -401,7 +400,7 @@
     font-weight: bold;
     font-size: 3rem;
     background: transparent;
-    transition: 0.6s ease;
+    transition: all 0.5s ease;
     border-radius: 3px ;
     user-select: none;
 }
@@ -428,13 +427,13 @@
     border-radius: 50%;
     display: inline-block;
     filter: grayscale();
-    transition: var(--background-white) .5s ease-in;
+    transition:all .6s ease;
 }
 .active-client, .client-container__img:active {
     background-color: rgb(163, 156, 156);
     filter: contrast();
     transform: scale(1.3);
-    box-shadow: 0 0 5px 1px var(--color-button);
+    box-shadow: 0 0 2px 1px var(--color-button);
 }
 .blog-container{
     flex-direction:column;
@@ -512,6 +511,7 @@
     margin-bottom: 1rem;
     font-size: 1rem;
     outline: none;
+    color: var(--color-paragraph);
 }
 .contact-container__txt-area{
     font-size: 1rem;
@@ -519,6 +519,8 @@
     outline: none;
     padding: .5rem;
     margin-bottom: 2rem;
+    color: var(--color-paragraph);
+
 }
 .button--contact-container__btn{
     padding: 1rem 0;
@@ -546,4 +548,63 @@
     background: var(--background-rbga-black);
     padding: 1rem 0;
     margin-bottom: 2rem;
+}
+@media screen and (max-width: 600px){
+    .header-container{
+        width: 100%;
+        left: 0;
+        padding: 2rem;
+    }
+    .header-container__menu{
+        display:none ;
+    }
+    .header-container__title{
+        font-size: 1rem;
+    }
+    .main-wrapper-header,
+    .learning-container{
+        height: 600px;
+    }
+    .learning-container__day{
+        margin-top:.5rem;
+    }
+    .learning-container__title{
+        font-size: 2.4rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .learning-container__paragraph{
+        text-align: center;
+        font-size: 1rem;
+        padding: 0  3rem;
+    }
+    .learning-container__points{
+        left: 38%;
+        bottom: 65px;
+    }
+    .education-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .education-container__img-container,
+    .education-container__introduction-container{
+        width: 100%;
+    }
+    .education-container__img{
+        height: 450px;
+        padding: 3rem 2rem 0;
+
+    }
+    .education-container__introduction,
+    .education-container__icons-container{
+        padding: 1.5rem 2rem;
+    }
+    .features-container__container-online-tes{
+        grid-template-columns: 1fr;
+    }
+    .features-container__div{
+        width: 100%;
+        padding: 0;
+    }
+
 }
