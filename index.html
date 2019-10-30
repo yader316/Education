@@ -29,7 +29,7 @@
                 </ul>
             </nav>  
         </header> 
-        <section class="learning-container d-flex">
+        <main class="learning-container d-flex">
                 <div class="learning-container__day d-flex">
                     <p class="learning-container__title">Knowledge is power</p>
                     <p class="learning-container__paragraph">Any succesfull career stars with good education</p>
@@ -56,8 +56,8 @@
                     <span class="learning-container__dot" onclick="currentSlide(3)"></span>
                     <span class="learning-container__dot" onclick="currentSlide(4)"></span>  
                 </div>           
-        </section> 
-        <section class="education-container d-flex container">
+        </main> 
+        <main class="education-container d-flex container">
             <figure class="education-container__img-container">
                 <img src="img/comput-persona.png" alt="persona escribiendo" class="education-container__img">
             </figure>
@@ -83,10 +83,10 @@
                     </figure>
                 </div>
             </div>
-        </section> 
-        <section class="features-container">
+        </main> 
+        <main class="features-container">
             <h1 class="features-container__title title-style">features</h1>
-            <article class="features-container__container-online-tes container d-grid">
+            <section class="features-container__container-online-tes container d-grid">
                 <div class="features-container__div d-flex">
                     <figure class="features-container__img-container">
                         <img src="img/online_test.png" alt="test online" class="features-container__img">
@@ -141,12 +141,12 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti culpa pariatur tempora ipsam et veritatis ducimus qui a adipisci ad voluptatem quam nostrum.
                     </p>
                 </div>
-            </article>
-        </section> 
-        <section class="courses-container d-flex container">
+            </section>
+        </main> 
+        <main class="courses-container d-flex container">
             <h1 class="courses-container__title title-style">courses</h1>
             <section class="courses-container__courses-types d-grid">
-                <article class="courses-container__article d-flex">
+                <aside class="courses-container__aside d-flex">
                     <figure class="courses-container__img-container">
                         <img src="img/comput.png" alt="laptop" class="courses-container__img">
                     </figure>
@@ -159,8 +159,8 @@
                     <h3 class="courses-container__time">time : 3 pm</h3>
                     <h3 class="courses-container__teacher">teacher : yader mendoza</h3>
                     <button class="button button--courses-container__btn">join now</button>
-                </article>
-                <article class="courses-container__article d-flex">
+                </aside>
+                <aside class="courses-container__aside d-flex">
                     <figure class="courses-container__img-container">
                         <img src="img/camara.png" alt="photography" class="courses-container__img">
                     </figure>
@@ -173,8 +173,8 @@
                     <h3 class="courses-container__time">time : 6 pm</h3>
                     <h3 class="courses-container__teacher">teacher : Taislani Mendoza</h3>
                     <button class="button button--courses-container__btn">join now</button>
-                </article>
-                <article class="courses-container__article d-flex">
+                </aside>
+                <aside class="courses-container__aside d-flex"
                     <figure class="courses-container__img-container">
                         <img src="img/Reloj.png" alt="Reloj" class="courses-container__img">
                     </figure>
@@ -187,13 +187,63 @@
                     <h3 class="courses-container__time">time : 10 am</h3>
                     <h3 class="courses-container__teacher">teacher : gaudy boniche</h3>
                     <button class="button button--courses-container__btn">join now</button>
-                </article>
+                </aside>
             </section>
+            <!-- container mobil -->
+            <section class="courses-container__courses-types-mobil ">
+                    <aside class="courses-container__aside courses-container-mobil d-flex">
+                        <figure class="courses-container__img-container">
+                            <img src="img/comput.png" alt="laptop" class="courses-container__img">
+                        </figure>
+                        <div class="courses-container__information">
+                            <h2 class="courses-container__topic">wed design</h2>
+                            <p class="courses-container__paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta debitis, id vero animi dolorum aliquam, quasi eos ex voluptates, maiores ab?
+                            </p>
+                        </div>
+                        <h3 class="courses-container__time">time : 3 pm</h3>
+                        <h3 class="courses-container__teacher">teacher : yader mendoza</h3>
+                        <button class="button button--courses-container__btn">join now</button>
+                    </aside>
+                    <aside class="courses-container__aside courses-container-mobil d-flex">
+                        <figure class="courses-container__img-container">
+                            <img src="img/camara.png" alt="photography" class="courses-container__img">
+                        </figure>
+                        <div class="courses-container__information">
+                            <h2 class="courses-container__topic">photography</h2>
+                            <p class="courses-container__paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta debitis, id vero animi dolorum aliquam, quasi eos ex voluptates, maiores ab?
+                            </p>
+                        </div>
+                        <h3 class="courses-container__time">time : 6 pm</h3>
+                        <h3 class="courses-container__teacher">teacher : Taislani Mendoza</h3>
+                        <button class="button button--courses-container__btn">join now</button>
+                    </aside>
+                    <aside class="courses-container__aside courses-container-mobil d-flex"
+                        <figure class="courses-container__img-container">
+                            <img src="img/Reloj.png" alt="Reloj" class="courses-container__img">
+                        </figure>
+                        <div class="courses-container__information">
+                            <h2 class="courses-container__topic">digital marketing</h2>
+                            <p class="courses-container__paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta debitis, id vero animi dolorum aliquam, quasi eos ex voluptates, maiores ab?
+                            </p>
+                        </div>
+                        <h3 class="courses-container__time">time : 10 am</h3>
+                        <h3 class="courses-container__teacher">teacher : gaudy boniche</h3>
+                        <button class="button button--courses-container__btn">join now</button>
+                    </aside>
+                    <div class="courses-container__points">
+                            <span class="courses-container__dot" onclick="currentSlideCourses(1)"></span> 
+                            <span class="courses-container__dot" onclick="currentSlideCourses(2)"></span> 
+                            <span class="courses-container__dot" onclick="currentSlideCourses(3)"></span>
+                    </div> 
+                </section>
             <span class="courses-container__view-all">View all</span>
-        </section>   
-        <section class="out-teachers  d-flex">
-                <h1 class="out-teachers__title title-style">our teacchers</h1>
-            <aside class="out-teachers__container container d-grid">
+        </main>   
+        <main class="out-teachers  d-flex">
+            <h1 class="out-teachers__title title-style">our teacchers</h1>
+            <section class="out-teachers__container container d-grid">
                 <figure class="out-teachers__img-container d-flex">
                     <img src="img/fotos/valvet.png" alt="teachers" class="out-teachers__photo">
                     <div class="out-teachers__information d-flex">
@@ -257,11 +307,77 @@
                         <h3 class="out-teachers__profession">SEO head</h3>
                     </div>
                 </figure>
-            </aside>
-        </section>
-        <section class="programs-container container d-flex">
+            </section>
+            <!-- our teachers container mobil -->
+            <section class="out-teachers__container-mobil">
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/valvet.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">velvet vachon</h2>
+                        <h3 class="out-teachers__profession">desing head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/arlen.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">arlene anello</h2>
+                        <h3 class="out-teachers__profession">SEO Head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/benton.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">benton colley</h2>
+                        <h3 class="out-teachers__profession">photography head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/flody.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">floyd fukuda</h2>
+                        <h3 class="out-teachers__profession">marketin HOD</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/elena.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">elena cully</h2>
+                        <h3 class="out-teachers__profession">desing head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/bruton.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">bruton brooke</h2>
+                        <h3 class="out-teachers__profession">web technologist</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/resit.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">ressie rottman</h2>
+                        <h3 class="out-teachers__profession">desing head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/red.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">reed recio</h2>
+                        <h3 class="out-teachers__profession">photography head</h3>
+                    </div>
+                </figure>
+                <figure class="out-teachers__img-container d-flex">
+                    <img src="img/fotos/elena.png" alt="teachers" class="out-teachers__photo">
+                    <div class="out-teachers__information d-flex">
+                        <h2 class="out-teachers__name">nancee bluford</h2>
+                        <h3 class="out-teachers__profession">SEO head</h3>
+                    </div>
+                </figure>
+            </section>
+        </main>
+        <main class="programs-container container d-flex">
             <h1 class="programs-container__title title-style">programs</h1>
-            <article class="programs-container__information d-grid">
+            <section class="programs-container__information d-grid">
                 <div class="programs-container__programs-pre-college">
                     <div class="programs-container__info-programs d-flex">
                         <h1 class="programs-container__title-programs">pre-college education</h1>
@@ -310,9 +426,9 @@
                         </p>
                     </div>
                 </div>
-            </article>
-        </section>
-        <section class="client-container d-flex">
+            </section>
+        </main>
+        <main class="client-container d-flex">
             <h1 class="client-container__title title-style">what client say</h1>
             <aside class="client-container__information d-flex">
                 <figure class="client-container__dot-img">
@@ -360,8 +476,8 @@
                 <a class="client-container__prev" onclick="plusSlidesImg(-1)">&#10094;</a>
                 <a class="client-container__next" onclick="plusSlidesImg(1)">&#10095;</a>
             </aside>
-        </section>
-        <section class="blog-container d-flex">
+        </main>
+        <main class="blog-container d-flex">
             <h1 class="blog-container__title title-style">blog</h1>
             <aside class="blog-container__information d-flex">
                     <div class="swiper-container">
@@ -444,15 +560,15 @@
                         </div>
             </aside>
             <button class="button button--blog-container__btn">Read more</button>
-        </section>
-        <section class="newsletter-container ">
+        </main>
+        <main class="newsletter-container ">
             <form action="" class="newsletter-container__subscribe container d-flex">
                 <label class="newsletter-container__title">Subscribe to our Newsletter</label>
                 <input type="text" class="newsletter-container__txt">
                 <button class="button button--newsletter-container__btn">sing up</button>
             </form>
-        </section>
-        <section class="contact-container d-flex container">
+        </main>
+        <main class="contact-container d-flex container">
             <h1 class="contact-container__title title-style">contact</h1>
             <div class="contact-container__information d-flex">
                 <form action="" class="contact-container__form d-flex">
@@ -480,7 +596,7 @@
 
                 </div>
             </div>
-        </section>
+        </main>
         <footer class="footer" >
             <header class="footer-header-container container d-flex">
                 <div class="header-container__logo d-flex">

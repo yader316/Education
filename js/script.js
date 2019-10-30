@@ -47,3 +47,29 @@ function showSlidesClient(n) {
   slides[slideIndex-1].style.display = "flex"; 
   dots[slideIndex-1].className += " active-client";
 }
+
+
+//js container Courses
+var slideIndexCourses = 1;
+showSlidesCourses(slideIndexCourses);
+
+
+const currentSlideCourses = (n) => {
+  showSlidesCourses(slideIndex = n);
+}
+
+function showSlidesCourses(n) {
+  var i;
+  const slides = document.getElementsByClassName("courses-container-mobil");
+  const dots = document.getElementsByClassName("courses-container__dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-Courses", "");
+  }
+  slides[slideIndex-1].style.display = "flex"; 
+  dots[slideIndex-1].className += " active-Courses";
+}
