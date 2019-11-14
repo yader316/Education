@@ -17,6 +17,11 @@
                     <img src="img/icon/logo.png" alt="logo" class="header-container__img-logo">     
                 </figure>
                 <h1 class="header-container__title">education</h1>
+                <div class="menu-transform" id="dropMenu" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
             <nav class="header-container__menu-navigation">
                 <ul class="header-container__menu d-flex">    
@@ -51,10 +56,10 @@
                     <button class="button button--learning-container__btn">Learn more</button>
                 </div>
                 <div class="learning-container__points">
-                    <span class="learning-container__dot" onclick="currentSlide(1)"></span> 
-                    <span class="learning-container__dot" onclick="currentSlide(2)"></span> 
-                    <span class="learning-container__dot" onclick="currentSlide(3)"></span>
-                    <span class="learning-container__dot" onclick="currentSlide(4)"></span>  
+                    <span class="learning-container__dot dot-point" onclick="currentSlide(1)"></span> 
+                    <span class="learning-container__dot dot-point" onclick="currentSlide(2)"></span> 
+                    <span class="learning-container__dot dot-point" onclick="currentSlide(3)"></span>
+                    <span class="learning-container__dot dot-point" onclick="currentSlide(4)"></span>  
                 </div>           
         </main> 
         <main class="education-container d-flex container">
@@ -234,9 +239,9 @@
                         <button class="button button--courses-container__btn">join now</button>
                     </aside>
                     <div class="courses-container__points">
-                            <span class="courses-container__dot" onclick="currentSlideCourses(1)"></span> 
-                            <span class="courses-container__dot" onclick="currentSlideCourses(2)"></span> 
-                            <span class="courses-container__dot" onclick="currentSlideCourses(3)"></span>
+                            <span class="courses-container__dot dot-point" onclick="currentSlideCourses(1)"></span> 
+                            <span class="courses-container__dot dot-point" onclick="currentSlideCourses(2)"></span> 
+                            <span class="courses-container__dot dot-point" onclick="currentSlideCourses(3)"></span>
                     </div> 
                 </section>
             <span class="courses-container__view-all">View all</span>
@@ -430,15 +435,28 @@
         </main>
         <main class="client-container d-flex">
             <h1 class="client-container__title title-style">what client say</h1>
-            <aside class="client-container__information d-flex">
-                <figure class="client-container__dot-img">
-                    <img src="img/fotos/arlen.png" alt="" class="client-container__img" onclick="imgSlide(1)">
-                    <img src="img/fotos/benton.png" alt="" class="client-container__img" onclick="imgSlide(2)">
-                    <img src="img/fotos/elena.png" alt="" class="client-container__img" onclick="imgSlide(3)">
-                    <img src="img/fotos/valvet.png" alt="" class="client-container__img" onclick="imgSlide(4)">
-                    <img src="img/fotos/bruton.png" alt="" class="client-container__img" onclick="imgSlide(5)">
-                </figure> 
+            <section class="client-container__information d-flex">
+                <div class="client-container__dot-img d-flex">
+                    <figure class="client-container__img-container">
+                        <img src="img/fotos/arlen.png" alt="" class="client-container__img" onclick="imgSlide(1)">                    
+                    </figure>
+                    <figure class="client-container__img-container">
+                        <img src="img/fotos/benton.png" alt="" class="client-container__img" onclick="imgSlide(2)">
+                    </figure>
+                    <figure class="client-container__img-container">
+                        <img src="img/fotos/elena.png" alt="" class="client-container__img" onclick="imgSlide(3)">
+                    </figure>
+                    <figure class="client-container__img-container">
+                        <img src="img/fotos/valvet.png" alt="" class="client-container__img" onclick="imgSlide(4)">
+                    </figure>
+                    <figure class="client-container__img-container">
+                        <img src="img/fotos/bruton.png" alt="" class="client-container__img" onclick="imgSlide(5)">
+                    </figure>
+                </div> 
                 <div class="client-container__info-client d-flex">
+                    <figure class="client-container__img-container-mobil">
+                        <img src="img/fotos/arlen.png" alt="" class="client-container__img-mobil">  
+                    </figure>
                     <p class="client-container__paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit ipsam harum ea corporis hic molestias officiis ex maiores, quisquam aspernatur velit tempore quidem ad explicabo quis totam nostrum excepturi.
                     </p>
@@ -446,6 +464,9 @@
                     <h3 class="client-container__profession">CEO smart edu</h3>
                 </div>
                 <div class="client-container__info-client d-flex">
+                    <figure class="client-container__img-container-mobil">
+                        <img src="img/fotos/benton.png" alt="" class="client-container__img-mobil">  
+                    </figure>
                     <p class="client-container__paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit ipsam harum ea corporis hic molestias officiis ex maiores, quisquam aspernatur velit tempore quidem ad explicabo quis totam nostrum excepturi.
                     </p>
@@ -453,6 +474,9 @@
                     <h3 class="client-container__profession">web design</h3>
                 </div>
                 <div class="client-container__info-client d-flex">
+                    <figure class="client-container__img-container-mobil">
+                        <img src="img/fotos/elena.png" alt="" class="client-container__img-mobil">  
+                    </figure>
                     <p class="client-container__paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit ipsam harum ea corporis hic molestias officiis ex maiores, quisquam aspernatur velit tempore quidem ad explicabo quis totam nostrum excepturi.
                     </p>
@@ -460,6 +484,9 @@
                     <h3 class="client-container__profession">photography head</h3>
                 </div>
                 <div class="client-container__info-client d-flex">
+                    <figure class="client-container__img-container-mobil">
+                        <img src="img/fotos/valvet.png" alt="" class="client-container__img-mobil">  
+                    </figure>
                     <p class="client-container__paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit ipsam harum ea corporis hic molestias officiis ex maiores, quisquam aspernatur velit tempore quidem ad explicabo quis totam nostrum excepturi.
                     </p>
@@ -467,6 +494,9 @@
                     <h3 class="client-container__profession">photography</h3>
                 </div>
                 <div class="client-container__info-client d-flex">
+                    <figure class="client-container__img-container-mobil">
+                        <img src="img/fotos/bruton.png" alt="" class="client-container__img-mobil">  
+                    </figure>
                     <p class="client-container__paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit ipsam harum ea corporis hic molestias officiis ex maiores, quisquam aspernatur velit tempore quidem ad explicabo quis totam nostrum excepturi.
                     </p>
@@ -475,11 +505,18 @@
                 </div>
                 <a class="client-container__prev" onclick="plusSlidesImg(-1)">&#10094;</a>
                 <a class="client-container__next" onclick="plusSlidesImg(1)">&#10095;</a>
-            </aside>
+                <div class="client-container__points">
+                    <span class="client-container__dot dot-point" onclick="currentSlideClient(1)"></span> 
+                    <span class="client-container__dot dot-point" onclick="currentSlideClient(2)"></span>  
+                    <span class="client-container__dot dot-point" onclick="currentSlideClient(3)"></span>
+                    <span class="client-container__dot dot-point" onclick="currentSlideClient(4)"></span>
+                    <span class="client-container__dot dot-point" onclick="currentSlideClient(5)"></span>                
+                </div> 
+            </section>
         </main>
         <main class="blog-container d-flex">
             <h1 class="blog-container__title title-style">blog</h1>
-            <aside class="blog-container__information d-flex">
+            <section class="blog-container__information d-flex">
                     <div class="swiper-container">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -558,7 +595,7 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
-            </aside>
+            </section>
             <button class="button button--blog-container__btn">Read more</button>
         </main>
         <main class="newsletter-container ">
@@ -593,26 +630,25 @@
                             <p class="contact-container__paragraph">8418 - 1496</p>
                         </figure>
                     </div>
-
                 </div>
             </div>
         </main>
         <footer class="footer" >
             <header class="footer-header-container container d-flex">
-                <div class="header-container__logo d-flex">
+                <div class="footer-header-container__logo d-flex">
                     <figure class="header-container__img">
                         <img src="img/icon/logo.png" alt="logo" class="header-container__img-logo">     
                     </figure>
-                    <h1 class="header-container__title">education</h1>
+                    <h1 class="footer-header-container__title">education</h1>
                 </div>
-                <nav class="header-container__menu-navigation">
-                    <ul class="header-container__menu d-flex">    
-                        <li class="header-container__items"><a href="" class="header-container__link">home</a></li>
-                        <li class="header-container__items"><a href="" class="header-container__link">about us</a></li>
-                        <li class="header-container__items"><a href="" class="header-container__link">courses</a></li>
-                        <li class="header-container__items"><a href="" class="header-container__link">teachers</a></li>
-                        <li class="header-container__items"><a href="" class="header-container__link">blog</a></li>
-                        <li class="header-container__items"><a href="" class="header-container__link">contact</a></li>
+                <nav class="footer-header-container__menu-navigation">
+                    <ul class="footer-header-container__menu">    
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">home</a></li>
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">about us</a></li>
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">courses</a></li>
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">teachers</a></li>
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">blog</a></li>
+                        <li class="footer-header-container__items"><a href="" class="footer-header-container__link">contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -620,6 +656,7 @@
     </main>
 </body> 
 <script src="js/script.js"></script>
+<script src="js/scriptMenu.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/swiperCtrl.js"></script>
 </html>
