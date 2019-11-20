@@ -26,6 +26,10 @@
 .d-flex{
     display: flex;
 }
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+}
 .container{
     width: 80%;
     margin-left: auto;
@@ -496,8 +500,8 @@
 }
 .blog-container__subtitle{
     text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 1rem .2rem;
 }
 .blog-container__paragraph{
     text-align: center;
@@ -625,6 +629,9 @@
     border-radius: 50px;
 }
 @media screen and (max-width: 900px){
+    .title-style{
+        padding: 3rem 0;
+    }
     .header-container{
         width: 100%; 
         top: 0;
@@ -752,6 +759,9 @@
         width: 100%;
         padding: 0;
     }
+    .out-teachers__information{
+        margin-bottom: 3rem;
+    }
     .out-teachers__photo{
         width: 50%;
     }
@@ -795,7 +805,7 @@
     }
     .client-container__paragraph{
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 2rem;
         margin: 0;
     }
     .client-container__points{
@@ -916,9 +926,8 @@
         color: var(--color-lyrics);
         text-transform: capitalize;
         font-weight: bold;
+    }   
+    .blog-container__subtitle{
+        padding: 1rem 0;
     }
-    
-
-
-    
 }
